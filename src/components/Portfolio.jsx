@@ -1,28 +1,37 @@
 import React from "react";
 import cocktail from "../assets/portfolio/cocktail.png";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
-
+import githubfinder from "../assets/portfolio/githubfinder.png";
+import ecommerce from "../assets/portfolio/ecommerce.png";
+import portfolio from "../assets/portfolio/portfolio.png";
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
       src: cocktail,
+      name: "Cocktail Finder using ReactJS, TailwindCSS, Context API",
+      link: "https://cocktail-finder-six.vercel.app/",
+      repo: "https://github.com/ayenyeinchanpyae/cocktail-finder",
     },
     {
       id: 2,
-      src: reactParallax,
+      src: githubfinder,
+      name: "Cocktail Finder  ReactJS, TailwindCSS, Context API",
+      link: "https://github-finder-pearl-omega.vercel.app/",
+      repo: "https://github.com/ayenyeinchanpyae/github-finder",
     },
     {
       id: 3,
-      src: navbar,
+      src: ecommerce,
+      name: "Ecommerce application using ReactJS, BoootStrap, Firebase",
+      link: "https://e-mart-eight.vercel.app/",
+      repo: "https://github.com/ayenyeinchanpyae/E-mart",
     },
     {
       id: 4,
-      src: reactSmooth,
+      src: portfolio,
+      name: "Portfolio using ReactJS, TailwindCSS",
+      link: "https://ancp.vercel.app/",
+      repo: "https://github.com/ayenyeinchanpyae/ancp",
     },
   ];
 
@@ -39,23 +48,32 @@ const Portfolio = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-              <img
-                src={src}
-                alt=""
-                className="rounded-md duration-200 hover:scale-105"
-              />
-              <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Code
-                </button>
+        <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-8 px-12 sm:px-0">
+          {portfolios.map(({ id, src, link, repo, name }) => (
+            <a href={link} target="_blank">
+              <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+                <img
+                  src={src}
+                  alt=""
+                  className="rounded-md duration-200 hover:scale-105 h-[250px]"
+                />
+                <div className="flex flex-col items-center justify-center space-y-4 p-3">
+                  <p>{name}</p>
+                  <div className="flex">
+                    <a href={link} target="_blank">
+                      <button className="w-1/2 px-6 duration-200 hover:scale-105">
+                        Demo
+                      </button>
+                    </a>
+                    <a href={repo} target="_blank">
+                      <button className="w-1/2 px-6  duration-200 hover:scale-105">
+                        Code
+                      </button>
+                    </a>
+                  </div>
+                </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

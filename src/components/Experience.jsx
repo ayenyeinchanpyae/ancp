@@ -4,11 +4,10 @@ import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
-import nextjs from "../assets/nextjs.png";
-import graphql from "../assets/graphql.png";
+import firebase from "../assets/firebase.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
-
+import nodejs from "../assets/nodejs.png";
 const Experience = () => {
   const techs = [
     {
@@ -43,13 +42,13 @@ const Experience = () => {
     },
     {
       id: 6,
-      src: nextjs,
+      src: nodejs,
       title: "NodeJS",
       style: "shadow-white",
     },
     {
       id: 7,
-      src: graphql,
+      src: firebase,
       title: "Firebase",
       style: "shadow-pink-400",
     },
