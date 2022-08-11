@@ -18,12 +18,9 @@ const About = () => {
         <br />
 
         <p className="text-xl">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-          pariatur, vel similique sint, nobis aspernatur ut praesentium
-          explicabo ipsam aliquid quasi laboriosam et culpa possimus repudiandae
-          quisquam ullam maiores ab unde. Fugiat odio mollitia nemo alias.
-          Commodi facilis atque nulla vero voluptatem explicabo. Quibusdam,
-          magni quo! Eum cupiditate debitis labore.
+          Enthusiastic, dedicated and detail-oriented person with excellent
+          focus, communication and ability to learn rapidly. Excels working in a
+          team environment. Strong critical analysis and problem solving.
         </p>
       </div>
     </div>

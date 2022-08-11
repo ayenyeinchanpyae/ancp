@@ -15,7 +15,7 @@ const Portfolio = () => {
     {
       id: 2,
       src: githubfinder,
-      name: "Cocktail Finder  ReactJS, TailwindCSS, Context API",
+      name: "Github Profile Finder  ReactJS, TailwindCSS, Context API",
       link: "https://github-finder-pearl-omega.vercel.app/",
       repo: "https://github.com/ayenyeinchanpyae/github-finder",
     },
