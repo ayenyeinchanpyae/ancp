@@ -11,7 +11,7 @@ const Home = () => {
       className="h-screen w-full bg-white " //bg-gradient-to-b from-black via-black to-gray-800
     >
       <div className="  max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-        <div className="relative flex flex-col justify-center h-full space-y-3">
+        <div className="flex flex-col justify-center h-full space-y-3">
           {/* <Animate
             play
             duration={2}
