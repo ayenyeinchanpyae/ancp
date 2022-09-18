@@ -3,9 +3,9 @@ let timelineElements = [
     id: 1,
     title: "Web Developer",
     location: "Openfor.co",
-    description:
-      "Working hand-in-hand with front-end developers by providing the outward facing web application elements server-side logic. Creating the logic to make the web app function properly, and accomplishing this through the use of server-side scripting languages.",
-    buttonText: "View Backend Projects",
+    // description:
+    //   "Working hand-in-hand with front-end developers by providing the outward facing web application elements server-side logic. Creating the logic to make the web app function properly, and accomplishing this through the use of server-side scripting languages.",
+    // // buttonText: "View Backend Projects",
     date: "1/2022 - Present",
     icon: "work",
   },
@@ -13,9 +13,9 @@ let timelineElements = [
     id: 2,
     title: "Volunteer AI Teacher",
     location: "Thate Pan Hub",
-    description:
-      "Assessing the quality of specifications and technical design documents in order to ensure timely, relevant and meaningful feedback.",
-    buttonText: "Company Website",
+    // description:
+    //   "Assessing the quality of specifications and technical design documents in order to ensure timely, relevant and meaningful feedback.",
+    // // buttonText: "Company Website",
     date: "1/2022 - 4/2022",
     icon: "work",
   },

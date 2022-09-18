@@ -6,7 +6,7 @@ import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
 import Experience from "./components/Experience";
 import Skills from "./components/Skills.jsx";
-
+import Test from "./components/Test.jsx";
 function App() {
   return (
     <div>
@@ -19,6 +19,7 @@ function App() {
       <Skills />
 
       <Contact />
+      {/* <Test /> */}
 
       <SocialLinks />
     </div>

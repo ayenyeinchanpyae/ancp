@@ -15,9 +15,15 @@ const Experience = () => {
   return (
     <div
       name="experience"
-      className=" h-full w-full flex items-center pt-[80px] pb-[80px] bg-slate-50"
+      className="h-full w-full flex flex-col items-center pt-[80px] pb-[80px] bg-slate-50"
     >
-      <VerticalTimeline>
+      <div className="pb-8">
+        <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+          Experience
+        </p>
+        <p className="py-6">Check out some of my work right here</p>
+      </div>
+      <VerticalTimeline className="">
         {timelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";
           let showButton =
@@ -27,6 +33,7 @@ const Experience = () => {
 
           return (
             <VerticalTimelineElement
+              className=""
               key={element.key}
               date={element.date}
               dateClassName="date"

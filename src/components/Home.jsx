@@ -80,7 +80,7 @@ const Home = () => {
             </Link> */}
           </div>
         </div>
-        {/* <div className="absolute ml-[500px] mt-[300px] w-[100px]">
+        {/* <div className="absolute md:ml-[500px] md:mt-[300px] w-[100px]">
           <img className="logo" src={javascript} alt="" />
         </div> */}
 
