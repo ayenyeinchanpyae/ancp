@@ -24,12 +24,16 @@ const NavBar = () => {
     },
     {
       id: 5,
+      link: "skills",
+    },
+    {
+      id: 6,
       link: "contact",
     },
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 md:px-[150px]  text-slate-300  fixed">
+    <div className="flex justify-between items-center w-full h-[80px] md:px-[150px]  text-slate-300 fixed">
       <div>
         <h1 className="text-5xl font-signature ml-2">Aye</h1>
       </div>
