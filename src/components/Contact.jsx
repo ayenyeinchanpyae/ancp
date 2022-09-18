@@ -91,7 +91,7 @@ const Contact = () => {
               <button
                 type="submit"
                 value="Send"
-                className="bg-blue-700 text-white px-6 py-3 my-4 mx-auto rounded-md hover:scale-110 duration-300"
+                className="bg-slate-700 justify-end text-white px-6 py-3 my-4 mx-auto rounded-md hover:scale-110 duration-300"
               >
                 Let's talk
               </button>
