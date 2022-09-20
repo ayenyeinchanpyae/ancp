@@ -13,7 +13,7 @@ const Experience = () => {
   let schoolIconStyles = { background: "#f9c74f" };
 
   return (
-    <div name="experience" className="w-full h-full">
+    <div name="experience" className="w-full h-full -z-10">
       <div className=" flex flex-col items-center py-[80px] px-[80px] bg-slate-50">
         <div className="flex  w-full">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
