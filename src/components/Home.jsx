@@ -2,15 +2,27 @@ import React from "react";
 import ancp from "../assets/ancp.jpeg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
-import javascript from "../assets/javascript.png";
-import "../style/home.css";
+import javascript from "../assets//skills/javascript.png";
+import css from "../assets//skills/css.png";
+import firebase from "../assets/skills/firebase.png";
+import node from "../assets/skills/node.png";
+import react from "../assets/skills/react.png";
+import html from "../assets/skills/html.png";
+import tailwind from "../assets/skills/tailwind.png";
+import git from "../assets/skills/git.png";
+import sass from "../assets/skills/sass.png";
+import vscode from "../assets/skills/vscode.png";
+import redux from "../assets/skills/redux.png";
+import bootstrap from "../assets/skills/bootstrap.png";
+
+import "../style/backgroundAnimation.css";
 const Home = () => {
   return (
     <div
       name="home"
-      className="h-screen w-full bg-white " //bg-gradient-to-b from-black via-black to-gray-800
+      className="relative overflow-x-hidden overflow-y-hidden h-screen w-full bg-white " //bg-gradient-to-b from-black via-black to-gray-800
     >
-      <div className="  max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
+      <div className="overflow-x-hidden overflow-y-hidde max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full space-y-3">
           {/* <Animate
             play
@@ -30,8 +42,8 @@ const Home = () => {
               I'm Aye Nyein Chan Pyae
             </h2>
           </Animate> */}
-          <p className="text-2xl tracking-widest">Aye Nyein Chan Pyae</p>
-          <p className="md:text-4xl text-3xl font-semibold tracking-widest">
+          <p className="text-xl tracking-widest">Aye Nyein Chan Pyae</p>
+          <p className="md:text-4xl text-xl font-semibold tracking-widest">
             Front-end Developer
           </p>
           {/* <p className="md:text-4xl text-3xl pl-[50px]">UI/UX Designer</p> */}
@@ -80,6 +92,7 @@ const Home = () => {
             </Link> */}
           </div>
         </div>
+
         {/* <div className="absolute md:ml-[500px] md:mt-[300px] w-[100px]">
           <img className="logo" src={javascript} alt="" />
         </div> */}
@@ -103,6 +116,20 @@ const Home = () => {
             />
           </div>
         </Animate> */}
+      </div>
+      <div class="background overflow-y-hidde">
+        <img src={javascript} alt="" />
+        <img src={sass} />
+        <img src={tailwind} />
+        <img src={css} />
+        <img src={firebase} />
+        <img src={vscode} />
+        <img src={react} />
+        <img src={node} />
+        <img src={html} />
+        <img src={redux} />
+        <img src={bootstrap} />
+        <img src={git} />
       </div>
     </div>
   );

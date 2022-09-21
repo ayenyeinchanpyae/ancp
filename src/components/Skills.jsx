@@ -1,13 +1,13 @@
 import React from "react";
 
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import javascript from "../assets/javascript.png";
-import reactImage from "../assets/react.png";
-import firebase from "../assets/firebase.png";
-import github from "../assets/github.png";
-import tailwind from "../assets/tailwind.png";
-import nodejs from "../assets/nodejs.png";
+import javascript from "../assets//skills/javascript.png";
+import github from "../assets//skills/github.png";
+import css from "../assets//skills/css.png";
+import firebase from "../assets/skills/firebase.png";
+import node from "../assets/skills/node.png";
+import react from "../assets/skills/react.png";
+import html from "../assets/skills/html.png";
+import tailwind from "../assets/skills/tailwind.png";
 const Skills = () => {
   const techs = [
     {
@@ -30,7 +30,7 @@ const Skills = () => {
     },
     {
       id: 4,
-      src: reactImage,
+      src: react,
       title: "React",
       // style: "shadow-blue-600",
     },
@@ -42,7 +42,7 @@ const Skills = () => {
     },
     {
       id: 6,
-      src: nodejs,
+      src: node,
       title: "NodeJS",
       //style: "shadow-white",
     },
