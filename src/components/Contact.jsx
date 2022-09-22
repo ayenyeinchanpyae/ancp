@@ -39,7 +39,7 @@ const Contact = () => {
             <div>
               <BsCheckCircle className="text-white" />
               <span className="text-white">
-                Your email was sent successfully
+                Your message was sent successfully
               </span>
             </div>
           </div>
@@ -56,47 +56,49 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="flex items-center justify-center ">
-          {/* <div className="flex-1 ">
+        <div>
+          <div className="flex items-center justify-center ">
+            {/* <div className="flex-1 ">
             <img className="h-[250px] rounded-[50px]" src={contact} alt="" />
           </div> */}
-          <form
-            ref={form}
-            onSubmit={sendEmail}
-            className=" flex flex-col w-full md:w-1/2 shadow-md p-4"
-          >
-            <input
-              type="text"
-              name="user_name"
-              placeholder="Enter your name"
-              required
-              className="p-2 bg-transparent border-2 rounded-md  focus:outline-none"
-            />
-            <input
-              type="text"
-              name="user_email"
-              placeholder="Enter your email"
-              required
-              className="my-4 p-2 bg-transparent border-2 rounded-mdfocus:outline-none"
-            />
-            <textarea
-              name="message"
-              placeholder="Enter your message"
-              required
-              rows="5"
-              className="p-2 bg-transparent border-2 rounded-md focus:outline-none"
-            ></textarea>
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              className=" flex flex-col w-full md:w-1/2 shadow-md p-4"
+            >
+              <input
+                type="text"
+                name="user_name"
+                placeholder="Enter your name"
+                required
+                className="p-2 bg-transparent border-2 rounded-md  focus:outline-none"
+              />
+              <input
+                type="text"
+                name="user_email"
+                placeholder="Enter your email"
+                required
+                className="my-4 p-2 bg-transparent border-2 rounded-mdfocus:outline-none"
+              />
+              <textarea
+                name="message"
+                placeholder="Enter your message"
+                required
+                rows="5"
+                className="p-2 bg-transparent border-2 rounded-md focus:outline-none"
+              ></textarea>
 
-            <div className="flex justify-end">
-              <button
-                type="submit"
-                value="Send"
-                className="bg-slate-700 justify-end text-white px-6 py-3 my-4 mx-auto rounded-md hover:scale-110 duration-300"
-              >
-                Let's talk
-              </button>
-            </div>
-          </form>
+              <div className="flex justify-end">
+                <button
+                  type="submit"
+                  value="Send"
+                  className="bg-slate-700 justify-end text-white px-6 py-3 my-4 mx-auto rounded-md hover:scale-110 duration-300"
+                >
+                  Let's talk
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>

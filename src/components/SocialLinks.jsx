@@ -51,65 +51,6 @@ const SocialLinks = () => {
     },
   ];
 
-  // const links = [
-  //   {
-  //     id: 1,
-  //     child: (
-  //       <>
-  //         Home <AiOutlineHome size={30} />
-  //       </>
-  //     ),
-  //     link: "home",
-  //     style: "rounded-tr-md",
-  //   },
-  //   {
-  //     id: 2,
-  //     child: (
-  //       <>
-  //         About <BiUserCircle className="text-white" size={30} />
-  //       </>
-  //     ),
-  //     link: "about",
-  //   },
-  //   {
-  //     id: 3,
-  //     child: (
-  //       <>
-  //         Projects <AiOutlineCode size={30} />
-  //       </>
-  //     ),
-  //     link: "portfolio",
-  //   },
-  //   {
-  //     id: 4,
-  //     child: (
-  //       <>
-  //         Skills <FiSettings size={30} />
-  //       </>
-  //     ),
-  //     link: "skills",
-  //   },
-  //   {
-  //     id: 5,
-  //     child: (
-  //       <>
-  //         Experience <MdOutlineWork size={30} />
-  //       </>
-  //     ),
-  //     link: "experience",
-  //   },
-  //   {
-  //     id: 6,
-  //     child: (
-  //       <>
-  //         Contact <MdContactMail size={30} />
-  //       </>
-  //     ),
-  //     link: "contact",
-  //     style: "rounded-br-md",
-  //   },
-  // ];
-
   return (
     <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
       <ul>

@@ -38,9 +38,9 @@ let timelineElements = [
   },
   {
     id: 5,
-    title: "Mandalay Technological University",
-    location: "Mandalay",
-    description: "Final Year - Computer Engineering and Information Technology",
+    title: "Final Year - Computer Engineering and Information Technology",
+    location: "GPA- 4.33 (max possible 5)",
+    description: "Mandalay Technological University",
     date: "2014 - 2021",
     icon: "school",
   },
