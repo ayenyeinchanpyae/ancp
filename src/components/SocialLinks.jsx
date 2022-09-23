@@ -17,7 +17,7 @@ const SocialLinks = () => {
           Linkedin <FaLinkedin size={30} />
         </>
       ),
-      href: "https://www.linkedin.com/in/aye-nyein-chan-pyae-2748a3175",
+      href: "https://www.linkedin.com/in/aye-nyein-chan-pyae",
       style: "rounded-tr-md",
     },
     {

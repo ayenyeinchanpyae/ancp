@@ -1,4 +1,6 @@
 import React from "react";
+import { BiLinkExternal } from "react-icons/bi";
+import { BsGithub } from "react-icons/bs";
 import cocktail from "../assets/portfolio/cocktail.png";
 import githubfinder from "../assets/portfolio/githubfinder.png";
 import ecommerce from "../assets/portfolio/ecommerce.png";
@@ -6,7 +8,18 @@ import portfolio from "../assets/portfolio/portfolio.png";
 import cocktailMobile from "../assets/portfolio/mobile/cocktailMobile.png";
 import githubFinderMobile from "../assets/portfolio/mobile/githubFinderMobile.png";
 import emartMobile from "../assets/portfolio/mobile/emartMobile.png";
-
+import javascript from "../assets//skills/javascript.png";
+import css from "../assets//skills/css.png";
+import firebase from "../assets/skills/firebase.png";
+import node from "../assets/skills/node.png";
+import react from "../assets/skills/react.png";
+import html from "../assets/skills/html.png";
+import tailwind from "../assets/skills/tailwind.png";
+import git from "../assets/skills/git.png";
+import sass from "../assets/skills/sass.png";
+import vscode from "../assets/skills/vscode.png";
+import redux from "../assets/skills/redux.png";
+import bootstrap from "../assets/skills/bootstrap.png";
 const Portfolio = () => {
   const portfolios = [
     {
@@ -16,6 +29,7 @@ const Portfolio = () => {
       name: "Cocktail Finder using ReactJS, TailwindCSS, Context API",
       link: "https://cocktail-finder-six.vercel.app/",
       repo: "https://github.com/ayenyeinchanpyae/cocktail-finder",
+      techStack: [react, tailwind],
     },
     {
       id: 2,
@@ -24,6 +38,7 @@ const Portfolio = () => {
       name: "Github Profile Finder  ReactJS, TailwindCSS, Context API",
       link: "https://github-finder-pearl-omega.vercel.app/",
       repo: "https://github.com/ayenyeinchanpyae/github-finder",
+      techStack: [react, tailwind],
     },
     {
       id: 3,
@@ -32,13 +47,16 @@ const Portfolio = () => {
       name: "Ecommerce application using ReactJS, BoootStrap, Firebase",
       link: "https://e-mart-eight.vercel.app/",
       repo: "https://github.com/ayenyeinchanpyae/E-mart",
+      techStack: [react, bootstrap, firebase],
     },
     {
       id: 4,
       src: portfolio,
+      mobileSrc: portfolio,
       name: "Portfolio using ReactJS, TailwindCSS",
       link: "https://ancp.vercel.app/",
       repo: "https://github.com/ayenyeinchanpyae/ancp",
+      techStack: [react, tailwind],
     },
   ];
 
@@ -53,33 +71,58 @@ const Portfolio = () => {
         </div>
 
         <div className="flex flex-wrap flex-col md:flex-row gap-16 justify-center">
-          {portfolios.map(({ id, src, link, repo, name, mobileSrc }) => (
-            <div
-              key={id}
-              className="shadow-sm shadow-gray-400 md:w-[500px] lg:w-[450px] "
-            >
-              <img
-                src={src}
-                alt=""
-                className="hidden md:block duration-200 h-[250px] w-full"
-              />
-              <img
-                src={mobileSrc}
-                alt=""
-                className="md:hidden duration-200 h-[250px] w-full"
-              />
-              <div className="flex flex-col  space-y-4 p-3">
-                <p>{name}</p>
+          {portfolios.map(
+            ({ id, src, link, repo, name, mobileSrc, techStack }) => (
+              <div
+                key={id}
+                className="shadow-sm shadow-gray-400 md:w-[500px] lg:w-[450px] "
+              >
+                <img
+                  src={src}
+                  alt=""
+                  className="hidden md:block duration-200 h-[250px] w-full"
+                />
+                <img
+                  src={mobileSrc}
+                  alt=""
+                  className="md:hidden duration-200 h-[250px] w-full"
+                />
+                <div className="flex flex-col  space-y-4 p-3">
+                  <p>{name}</p>
 
-                <a href={link} target="_blank">
-                  <button className="  duration-200 ">Live Demo</button>
-                </a>
-                <a href={repo} target="_blank">
-                  <button className="  duration-200 ">View on Github</button>
-                </a>
+                  <div className="flex space-x-4">
+                    {techStack.map((tech) => (
+                      <img className="w-[30px] h-[30px]" src={tech} />
+                    ))}
+                  </div>
+                  <div className="flex justify-between">
+                    <a
+                      className="flex items-center space-x-4"
+                      href={link}
+                      target="_blank"
+                    >
+                      <button className="  duration-200 ">Live Demo</button>
+                      <span>
+                        <BiLinkExternal />
+                      </span>
+                    </a>
+                    <a
+                      className="flex items-center space-x-4"
+                      href={repo}
+                      target="_blank"
+                    >
+                      <button className="  duration-200 ">
+                        View on Github
+                      </button>
+                      <span>
+                        <BsGithub />
+                      </span>
+                    </a>
+                  </div>
+                </div>
               </div>
-            </div>
-          ))}
+            )
+          )}
         </div>
       </div>
     </div>
