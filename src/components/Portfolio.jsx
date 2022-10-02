@@ -8,17 +8,9 @@ import portfolio from "../assets/portfolio/portfolio.png";
 import cocktailMobile from "../assets/portfolio/mobile/cocktailMobile.png";
 import githubFinderMobile from "../assets/portfolio/mobile/githubFinderMobile.png";
 import emartMobile from "../assets/portfolio/mobile/emartMobile.png";
-import javascript from "../assets//skills/javascript.png";
-import css from "../assets//skills/css.png";
 import firebase from "../assets/skills/firebase.png";
-import node from "../assets/skills/node.png";
 import react from "../assets/skills/react.png";
-import html from "../assets/skills/html.png";
 import tailwind from "../assets/skills/tailwind.png";
-import git from "../assets/skills/git.png";
-import sass from "../assets/skills/sass.png";
-import vscode from "../assets/skills/vscode.png";
-import redux from "../assets/skills/redux.png";
 import bootstrap from "../assets/skills/bootstrap.png";
 const Portfolio = () => {
   const portfolios = [
@@ -92,7 +84,7 @@ const Portfolio = () => {
 
                   <div className="flex space-x-4">
                     {techStack.map((tech) => (
-                      <img className="w-[30px] h-[30px]" src={tech} />
+                      <img className="w-[30px] h-[30px]" src={tech} alt="" />
                     ))}
                   </div>
                   <div className="flex justify-between">
@@ -100,6 +92,7 @@ const Portfolio = () => {
                       className="flex items-center space-x-4"
                       href={link}
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <button className="  duration-200 ">Live Demo</button>
                       <span>
@@ -107,6 +100,7 @@ const Portfolio = () => {
                       </span>
                     </a>
                     <a
+                      rel="noreferrer"
                       className="flex items-center space-x-4"
                       href={repo}
                       target="_blank"

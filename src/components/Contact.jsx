@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { BsCheckCircle } from "react-icons/bs";
-import contact from "../assets/contact.svg";
 const Contact = () => {
   const form = useRef();
   const [isSuccess, setIsSuccess] = useState(false);
@@ -40,6 +39,18 @@ const Contact = () => {
               <BsCheckCircle className="text-white" />
               <span className="text-white">
                 Your message was sent successfully
+              </span>
+            </div>
+          </div>
+        </div>
+      )}
+      {isError && (
+        <div className="toast toast-top toast-end mt-[100px]">
+          <div className="alert alert-error">
+            <div>
+              <BsCheckCircle className="text-white" />
+              <span className="text-white">
+                Something went wrong. Please try again.
               </span>
             </div>
           </div>

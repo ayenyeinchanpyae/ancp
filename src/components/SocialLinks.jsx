@@ -2,12 +2,7 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { AiOutlineHome, AiOutlineCode } from "react-icons/ai";
-import { BiUserCircle } from "react-icons/bi";
-import { MdOutlineWork, MdContactMail } from "react-icons/md";
-import { FiSettings } from "react-icons/fi";
-import { Link } from "react-scroll";
-import { GrContactInfo, GrPersonalComputer } from "react-icons/gr";
+
 const SocialLinks = () => {
   const links = [
     {

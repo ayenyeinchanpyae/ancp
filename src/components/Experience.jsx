@@ -24,10 +24,10 @@ const Experience = () => {
         <VerticalTimeline className="">
           {timelineElements.map((element) => {
             let isWorkIcon = element.icon === "work";
-            let showButton =
-              element.buttonText !== undefined &&
-              element.buttonText !== null &&
-              element.buttonText !== "";
+            // let showButton =
+            //   element.buttonText !== undefined &&
+            //   element.buttonText !== null &&
+            //   element.buttonText !== "";
 
             return (
               <VerticalTimelineElement

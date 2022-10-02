@@ -1,5 +1,4 @@
 import React from "react";
-import ancp from "../assets/ancp.jpeg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import javascript from "../assets//skills/javascript.png";
@@ -119,17 +118,17 @@ const Home = () => {
       </div>
       <div class="background overflow-y-hidde">
         <img src={javascript} alt="" />
-        <img src={sass} />
-        <img src={tailwind} />
-        <img src={css} />
-        <img src={firebase} />
-        <img src={vscode} />
-        <img src={react} />
-        <img src={node} />
-        <img src={html} />
-        <img src={redux} />
-        <img src={bootstrap} />
-        <img src={git} />
+        <img src={sass} alt="" />
+        <img src={tailwind} alt="" />
+        <img src={css} alt="" />
+        <img src={firebase} alt="" />
+        <img src={vscode} alt="" />
+        <img src={react} alt="" />
+        <img src={node} alt="" />
+        <img src={html} alt="" />
+        <img src={redux} alt="" />
+        <img src={bootstrap} alt="" />
+        <img src={git} alt="" />
       </div>
     </div>
   );
