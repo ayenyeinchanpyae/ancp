@@ -5,6 +5,7 @@ const Contact = () => {
   const form = useRef();
   const [isSuccess, setIsSuccess] = useState(false);
   const [isError, setIsError] = useState(false);
+  const initialState = { user_name: "", user_email: "", message: "" };
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -17,11 +18,10 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          document.getElementById("contact-form").reset();
           setIsSuccess(true);
         },
         (error) => {
-          console.log(error.text);
           setIsError(true);
         }
       );
@@ -73,6 +73,7 @@ const Contact = () => {
             <img className="h-[250px] rounded-[50px]" src={contact} alt="" />
           </div> */}
             <form
+              name="contact-form"
               ref={form}
               onSubmit={sendEmail}
               className=" flex flex-col w-full md:w-1/2 shadow-md p-4"
