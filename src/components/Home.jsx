@@ -116,7 +116,7 @@ const Home = () => {
           </div>
         </Animate> */}
       </div>
-      <div class="background overflow-y-hidde">
+      <div className="background overflow-y-hidde">
         <img src={javascript} alt="" />
         <img src={sass} alt="" />
         <img src={tailwind} alt="" />

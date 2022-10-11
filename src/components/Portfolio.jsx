@@ -15,40 +15,57 @@ import bootstrap from "../assets/skills/bootstrap.png";
 const Portfolio = () => {
   const portfolios = [
     {
-      id: 1,
+      id: 0,
       src: cocktail,
       mobileSrc: cocktailMobile,
       name: "Cocktail Finder using ReactJS, TailwindCSS, Context API",
       link: "https://cocktail-finder-six.vercel.app/",
       repo: "https://github.com/ayenyeinchanpyae/cocktail-finder",
       techStack: [react, tailwind],
+      // techStack: [
+      //   { id: 0, tech: react },
+      //   { id: 1, tech: tailwind },
+      // ],
     },
     {
-      id: 2,
+      id: 1,
       src: githubfinder,
       mobileSrc: githubFinderMobile,
       name: "Github Profile Finder  ReactJS, TailwindCSS, Context API",
       link: "https://github-finder-pearl-omega.vercel.app/",
       repo: "https://github.com/ayenyeinchanpyae/github-finder",
       techStack: [react, tailwind],
+      // techStack: [
+      //   { id: 3, tech: react },
+      //   { id: 4, tech: tailwind },
+      // ],
     },
     {
-      id: 3,
+      id: 2,
       src: ecommerce,
       mobileSrc: emartMobile,
       name: "Ecommerce application using ReactJS, BoootStrap, Firebase",
       link: "https://e-mart-eight.vercel.app/",
       repo: "https://github.com/ayenyeinchanpyae/E-mart",
       techStack: [react, bootstrap, firebase],
+      // techStack: [
+      //   { id: 0, tech: react },
+      //   { id: 1, tech: bootstrap },
+      //   { id: 2, tech: firebase },
+      // ],
     },
     {
-      id: 4,
+      id: 3,
       src: portfolio,
       mobileSrc: portfolio,
       name: "Portfolio using ReactJS, TailwindCSS",
       link: "https://ancp.vercel.app/",
       repo: "https://github.com/ayenyeinchanpyae/ancp",
       techStack: [react, tailwind],
+      // techStack: [
+      //   { id: 0, tech: react },
+      //   { id: 1, tech: tailwind },
+      // ],
     },
   ];
 
@@ -83,8 +100,13 @@ const Portfolio = () => {
                   <p>{name}</p>
 
                   <div className="flex space-x-4">
-                    {techStack.map((tech) => (
-                      <img className="w-[30px] h-[30px]" src={tech} alt="" />
+                    {techStack.map((id, tech) => (
+                      <img
+                        key={id}
+                        className="w-[30px] h-[30px]"
+                        src={tech}
+                        alt=""
+                      />
                     ))}
                   </div>
                   <div className="flex justify-between">
