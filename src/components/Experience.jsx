@@ -12,9 +12,12 @@ const Experience = () => {
   let schoolIconStyles = { background: "#f9c74f" };
 
   return (
-    <div name="experience" className="w-full h-full pt-[80px] text-slate-600">
+    <div
+      name="experience"
+      className="w-full h-full pt-[80px] bg-slate-50 text-slate-600"
+    >
       {/* // */}
-      <div className=" flex flex-col items-center py-[80px] px-[10px] md:px-[80px]  bg-slate-50">
+      <div className=" flex flex-col items-center py-[80px] px-[10px] md:px-[80px]  ">
         <div className="flex  pl-16 w-full">
           <p className="text-4xl font-bold inline w-[220px] border-b-4 border-gray-500 ">
             Experiences

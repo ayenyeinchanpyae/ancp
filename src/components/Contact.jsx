@@ -31,7 +31,7 @@ const Contact = () => {
     setIsSuccess(false);
   }, 10000);
   return (
-    <div name="contact" className="w-full h-screen  p-4">
+    <div name="contact" className="w-full h-screen bg-white p-4">
       {isSuccess && (
         <div className="toast toast-top toast-end mt-[100px]">
           <div className="alert alert-success">
