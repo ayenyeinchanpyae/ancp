@@ -5,7 +5,9 @@ const Contact = () => {
   const form = useRef();
   const [isSuccess, setIsSuccess] = useState(false);
   const [isError, setIsError] = useState(false);
-  const initialState = { user_name: "", user_email: "", message: "" };
+  const userName = useRef(null);
+  const userEmail = useRef(null);
+  const userMessage = useRef(null);
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -18,8 +20,12 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          document.getElementById("contact-form").reset();
+          //document.getElementById("contact-form").reset();
           setIsSuccess(true);
+          //  clear all input values in the form
+          userName.current.value = "";
+          userEmail.current.value = "";
+          userMessage.current.value = "";
         },
         (error) => {
           setIsError(true);
@@ -69,9 +75,6 @@ const Contact = () => {
 
         <div>
           <div className="flex items-center justify-center ">
-            {/* <div className="flex-1 ">
-            <img className="h-[250px] rounded-[50px]" src={contact} alt="" />
-          </div> */}
             <form
               name="contact-form"
               ref={form}
@@ -81,6 +84,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="user_name"
+                ref={userName}
                 placeholder="Enter your name"
                 required
                 className="p-2 bg-transparent border-2 rounded-md  focus:outline-none"
@@ -88,12 +92,14 @@ const Contact = () => {
               <input
                 type="text"
                 name="user_email"
+                ref={userEmail}
                 placeholder="Enter your email"
                 required
                 className="my-4 p-2 bg-transparent border-2 rounded-mdfocus:outline-none"
               />
               <textarea
                 name="message"
+                ref={userMessage}
                 placeholder="Enter your message"
                 required
                 rows="5"

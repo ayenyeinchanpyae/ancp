@@ -23,48 +23,10 @@ const Home = () => {
     >
       <div className="overflow-x-hidden overflow-y-hidde max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full space-y-3">
-          {/* <Animate
-            play
-            duration={2}
-            delay={0}
-            start={{
-              transform: "translateY(-500px)",
-            }}
-            end={{
-              transform: "translateX(-0px)",
-            }}
-          >
-            <h2 className="text-4xl sm:text-7xl font-bold text-gray-500">
-              Hello!
-            </h2>
-            <h2 className="text-4xl sm:text-7xl font-bold text-gray-500">
-              I'm Aye Nyein Chan Pyae
-            </h2>
-          </Animate> */}
           <p className="text-xl tracking-widest">Aye Nyein Chan Pyae</p>
           <p className="md:text-4xl text-xl font-semibold tracking-widest">
             Front-end Developer
           </p>
-          {/* <p className="md:text-4xl text-3xl pl-[50px]">UI/UX Designer</p> */}
-          {/* å */}
-          {/* <Animate
-            play
-            duration={2}
-            delay={0}
-            start={{
-              transform: "translateY(500px)",
-            }}
-            end={{
-              transform: "translateX(-0px)",
-            }}
-          >
-            <p className="text-gray-500 py-4 max-w-md">
-              Enthusiastic, dedicated and detail-oriented person with Excellent
-              focus, communication and ability to learn rapidly. Excels working
-              in a team environment. Currently, I love to work on web
-              application using technologies like React, Tailwind and NodeJS.
-            </p>
-          </Animate> */}
 
           <div className="flex justify-end">
             <Link
@@ -91,30 +53,6 @@ const Home = () => {
             </Link> */}
           </div>
         </div>
-
-        {/* <div className="absolute md:ml-[500px] md:mt-[300px] w-[100px]">
-          <img className="logo" src={javascript} alt="" />
-        </div> */}
-
-        {/* <Animate
-          play
-          duration={2}
-          delay={0}
-          start={{
-            transform: "translateX(500px)",
-          }}
-          end={{
-            transform: "translateX(-0px)",
-          }}
-        >
-          <div>
-            <img
-              src={ancp}
-              alt="my profile"
-              className="rounded-2xl mx-auto w-2/3 md:w-full"
-            />
-          </div>
-        </Animate> */}
       </div>
       <div className="background overflow-y-hidde">
         <img src={javascript} alt="" />
