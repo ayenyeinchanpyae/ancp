@@ -22,10 +22,6 @@ const Portfolio = () => {
       link: "https://cocktail-finder-six.vercel.app/",
       repo: "https://github.com/ayenyeinchanpyae/cocktail-finder",
       techStack: [react, tailwind],
-      // techStack: [
-      //   { id: 0, tech: react },
-      //   { id: 1, tech: tailwind },
-      // ],
     },
     {
       id: 1,
@@ -35,10 +31,6 @@ const Portfolio = () => {
       link: "https://github-finder-pearl-omega.vercel.app/",
       repo: "https://github.com/ayenyeinchanpyae/github-finder",
       techStack: [react, tailwind],
-      // techStack: [
-      //   { id: 3, tech: react },
-      //   { id: 4, tech: tailwind },
-      // ],
     },
     {
       id: 2,
@@ -48,11 +40,6 @@ const Portfolio = () => {
       link: "https://e-mart-eight.vercel.app/",
       repo: "https://github.com/ayenyeinchanpyae/E-mart",
       techStack: [react, bootstrap, firebase],
-      // techStack: [
-      //   { id: 0, tech: react },
-      //   { id: 1, tech: bootstrap },
-      //   { id: 2, tech: firebase },
-      // ],
     },
     {
       id: 3,
@@ -62,10 +49,6 @@ const Portfolio = () => {
       link: "https://ancp.vercel.app/",
       repo: "https://github.com/ayenyeinchanpyae/ancp",
       techStack: [react, tailwind],
-      // techStack: [
-      //   { id: 0, tech: react },
-      //   { id: 1, tech: tailwind },
-      // ],
     },
   ];
 
@@ -100,7 +83,13 @@ const Portfolio = () => {
                   <p>{name}</p>
 
                   <div className="flex space-x-4">
-                    {techStack.map((id, tech) => (
+                    {/* <img
+                      key={id}
+                      className="w-[30px] h-[30px]"
+                      src={react}
+                      alt=""
+                    /> */}
+                    {techStack.map((tech, id) => (
                       <img
                         key={id}
                         className="w-[30px] h-[30px]"

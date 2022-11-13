@@ -2,7 +2,8 @@ let timelineElements = [
   {
     id: 1,
     title: "Web Developer",
-    location: "Openfor.co",
+    location: "Remote",
+    description: "Openfor.co",
     // description:
     //   "Working hand-in-hand with front-end developers by providing the outward facing web application elements server-side logic. Creating the logic to make the web app function properly, and accomplishing this through the use of server-side scripting languages.",
     // // buttonText: "View Backend Projects",
@@ -12,7 +13,8 @@ let timelineElements = [
   {
     id: 2,
     title: "Volunteer AI Teacher",
-    location: "Thate Pan Hub",
+    location: "Remote",
+    description: "Thate Pan Hub",
     // description:
     //   "Assessing the quality of specifications and technical design documents in order to ensure timely, relevant and meaningful feedback.",
     // // buttonText: "Company Website",
@@ -21,7 +23,7 @@ let timelineElements = [
   },
   {
     id: 3,
-    title: "Intern",
+    title: "Intern (Web Developer)",
     location: "Yangon, Myanmar",
     description: "Base Technology",
     date: "11/2019 - 1/2020",
@@ -39,7 +41,7 @@ let timelineElements = [
   {
     id: 5,
     title: "Final Year - Computer Engineering and Information Technology",
-    location: "GPA- 4.33 (max possible 5)",
+    location: "Mandalay, Myanmar",
     description: "Mandalay Technological University",
     date: "2014 - 2021",
     icon: "school",

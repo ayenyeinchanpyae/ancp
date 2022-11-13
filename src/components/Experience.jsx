@@ -14,7 +14,7 @@ const Experience = () => {
   return (
     <div
       name="experience"
-      className="w-full h-full pt-[80px] bg-slate-50 text-slate-600"
+      className="w-full h-full bg-slate-50 px-[80px] text-slate-600"
     >
       {/* // */}
       <div className=" flex flex-col items-center py-[80px] px-[10px] md:px-[80px]  ">
