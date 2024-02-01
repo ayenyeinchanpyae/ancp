@@ -8,60 +8,75 @@ import node from "../assets/skills/node.png";
 import react from "../assets/skills/react.png";
 import html from "../assets/skills/html.png";
 import tailwind from "../assets/skills/tailwind.png";
+import typescript from "../assets/skills/typescript.png"
+import express from "../assets/skills/express.jpeg"
+
 const Skills = () => {
   const techs = [
     {
       id: 1,
       src: html,
-      title: "HTML",
+      title: 'HTML',
       //style: "shadow-orange-500",
     },
     {
       id: 2,
       src: css,
-      title: "CSS",
+      title: 'CSS',
       //style: "shadow-blue-500",
     },
     {
       id: 3,
       src: javascript,
-      title: "JavaScript",
+      title: 'JavaScript',
       // style: "shadow-yellow-500",
     },
     {
       id: 4,
-      src: react,
-      title: "React",
-      // style: "shadow-blue-600",
+      src: typescript,
+      title: 'TypeScript',
+      // style: "shadow-yellow-500",
     },
     {
       id: 5,
-      src: tailwind,
-      title: "Tailwind",
-      //style: "shadow-sky-400",
+      src: express,
+      title: 'Express',
+      // style: "shadow-yellow-500",
     },
     {
       id: 6,
-      src: node,
-      title: "NodeJS",
-      //style: "shadow-white",
+      src: react,
+      title: 'React',
+      // style: "shadow-blue-600",
     },
     {
       id: 7,
-      src: firebase,
-      title: "Firebase",
-      // style: "shadow-pink-400",
+      src: tailwind,
+      title: 'Tailwind',
+      //style: "shadow-sky-400",
     },
     {
       id: 8,
+      src: node,
+      title: 'NodeJS',
+      //style: "shadow-white",
+    },
+    {
+      id: 9,
+      src: firebase,
+      title: 'Firebase',
+      // style: "shadow-pink-400",
+    },
+    {
+      id: 10,
       src: github,
-      title: "GitHub",
+      title: 'GitHub',
       //style: "shadow-gray-400",
     },
   ];
 
   return (
-    <div name="skills" className="w-full h-screen pt-[80px] bg-white ">
+    <div name="skills" className="w-full h-screen pt-[80px] bg-white mb-4">
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full  ">
         <div>
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">

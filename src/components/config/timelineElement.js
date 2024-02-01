@@ -1,7 +1,7 @@
 let timelineElements = [
   {
     id: 0,
-    title: 'Software Engineer',
+    title: 'Software Developer(Backend)',
     location: 'Remote',
     description: 'JMS United Co,Ltd.',
     date: '2/2023 - Present',
@@ -9,7 +9,7 @@ let timelineElements = [
   },
   {
     id: 6,
-    title: 'Final Year - Bachelor in Science (Hons) Computing',
+    title: 'Bachelor of Science in Computing',
     location: '',
     description: 'University of Greenwich',
     date: '12/2022 - 11/2023',
