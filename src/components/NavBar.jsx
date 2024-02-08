@@ -14,20 +14,20 @@ const NavBar = () => {
       id: 2,
       link: "about",
     },
+    // {
+    //   id: 3,
+    //   link: "portfolio",
+    // },
     {
       id: 3,
-      link: "portfolio",
-    },
-    {
-      id: 4,
       link: "experience",
     },
     {
-      id: 5,
+      id: 4,
       link: "skills",
     },
     {
-      id: 6,
+      id: 5,
       link: "contact",
     },
   ];
