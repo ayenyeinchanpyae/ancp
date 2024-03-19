@@ -23,9 +23,9 @@ const Home = () => {
     >
       <div className="overflow-x-hidden overflow-y-hidde max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full space-y-3">
-          <p className="text-xl tracking-widest">Aye Nyein Chan Pyae</p>
+          <p className="text-2xl tracking-widest">Aye Nyein Chan Pyae</p>
           <p className="md:text-4xl text-xl font-semibold tracking-widest">
-            Software Engineer
+            Software Developer
           </p>
 
           <div className="flex justify-end">

@@ -1,10 +1,12 @@
-module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+const withMT = require('@material-tailwind/react/utils/withMT');
+
+module.exports =withMT({
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {},
     fontFamily: {
-      signature: ["Great Vibes"],
+      signature: ['Great Vibes'],
     },
   },
-  plugins: [require("daisyui")],
-};
+  plugins: [require('daisyui')],
+});

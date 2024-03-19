@@ -1,40 +1,39 @@
 import React from "react";
-import ancp from "../assets/ancp.jpeg";
+import { motion } from 'framer-motion';
+import ancp from "../assets/ancp.png";
 import { Animate } from "react-simple-animate";
+import SectionWrapper from "./common/SectionWrapper";
+import SectionTitle from "./common/SectionTitle";
 const About = () => {
   return (
-    <div name="about" className="w-full h-screen pt-[80px] bg-white text-slate-600">
-      <div className="max-w-screen-lg p-4 mx-auto  flex flex-col md:flex-row justify-center items-center w-full h-full">
-        <div className="flex-1 flex-col ">
-          <p className="text-4xl font-bold inline w-[120px] border-b-4 border-gray-500 ">About</p>
+    <SectionWrapper sectionName="about">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col md:flex-row justify-center items-center w-full h-full">
+        <div className="flex-1 flex-col md:mr-4">
+          <SectionTitle title="About" />
           <p className="text-xl pt-8 py-2">
-            Results-driven and versatile backend developer with a proven track record in designing
-            and implementing robust backend APIs for optimal system performance. Solid
-            understanding of coding principles, data structures, and algorithms. Strong
+            Results-driven and versatile software developer with a proven track record in designing
+            and implementing intuitive user interfaces and robust backend APIs for optimal system
+            performance.
+          </p>
+          <p className="text-xl py-2">
+            Solid understanding of coding principles, data structures, and algorithms. Strong
             communication and teamwork skills, coupled with a proactive approach to
             problem-solving.
           </p>
           <p className="text-xl py-2">
-            Skilled in ReactJS, NextJS, NodeJS and Application Programming Interfaces.
+            Skilled in ReactJS, NextJS, NodeJS, and Application Programming Interfaces.
           </p>
         </div>
-        <Animate
-          play
-          duration={1}
-          delay={0}
-          start={{
-            transform: 'translateX(300px)',
-          }}
-          end={{
-            transform: 'translateX(-0px)',
-          }}
+        <motion.div
+          initial={{ x: 300 }}
+          animate={{ x: 0 }}
+          transition={{ duration: 1, delay: 0 }}
+          className="flex-1 flex items-center justify-end"
         >
-          <div className="flex-1 flex items-center justify-end">
-            <img className="w-[350px] border-4 border-slate-300" src={ancp} alt="" />
-          </div>
-        </Animate>
+          <img className="w-full md:w-[350px]" src={ancp} alt="" />
+        </motion.div>
       </div>
-    </div>
+    </SectionWrapper>
   );
 };
 

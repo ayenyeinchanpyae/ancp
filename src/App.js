@@ -7,6 +7,7 @@ import SocialLinks from "./components/SocialLinks";
 import Experience from "./components/Experience";
 import Skills from "./components/Skills.jsx";
 import { Helmet } from "react-helmet";
+import Footer from "./components/Footer.jsx";
 function App() {
   return (
     <div>
@@ -17,10 +18,11 @@ function App() {
       <NavBar />
       <Home />
       <About />
-      <Portfolio />
-      <Experience />
+      {/* <Portfolio /> */}
+      <Experience /> 
       <Skills />
       <Contact />
+      <Footer/>
       <SocialLinks />
     </div>
   );

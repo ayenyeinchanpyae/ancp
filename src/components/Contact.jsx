@@ -1,6 +1,9 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { BsCheckCircle } from "react-icons/bs";
+import SectionTitle from "./common/SectionTitle";
+import SectionWrapper from "./common/SectionWrapper";
+
 const Contact = () => {
   const form = useRef();
   const [isSuccess, setIsSuccess] = useState(false);
@@ -37,7 +40,7 @@ const Contact = () => {
     setIsSuccess(false);
   }, 10000);
   return (
-    <div name="contact" className="w-full h-screen bg-white p-4">
+    <SectionWrapper sectionName="contact">
       {isSuccess && (
         <div className="toast toast-top toast-end mt-[100px]">
           <div className="alert alert-success">
@@ -64,9 +67,7 @@ const Contact = () => {
       )}
       <div className="flex flex-col  justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            Get In Touch
-          </p>
+          <SectionTitle title="Get In Touch"/>
           <p className="py-6">
             Feel free to drop me a message if you have some interesting offer or
             you want to hang out.
@@ -110,7 +111,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   value="Send"
-                  className="bg-slate-700 justify-end text-white px-6 py-3 my-4 mx-auto rounded-md hover:scale-110 duration-300"
+                  className="justify-end text-white bg-blue-gray-400 px-6 py-3 my-4 mx-auto rounded-md hover:scale-110 duration-300"
                 >
                   Let's talk
                 </button>
@@ -119,7 +120,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </SectionWrapper>
   );
 };
 

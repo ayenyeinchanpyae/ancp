@@ -83,12 +83,6 @@ const Portfolio = () => {
                   <p>{name}</p>
 
                   <div className="flex space-x-4">
-                    {/* <img
-                      key={id}
-                      className="w-[30px] h-[30px]"
-                      src={react}
-                      alt=""
-                    /> */}
                     {techStack.map((tech, id) => (
                       <img
                         key={id}
@@ -99,7 +93,7 @@ const Portfolio = () => {
                     ))}
                   </div>
                   <div className="flex justify-between">
-                    <a
+                    {/* <a
                       className="flex items-center space-x-4"
                       href={link}
                       target="_blank"
@@ -109,7 +103,7 @@ const Portfolio = () => {
                       <span>
                         <BiLinkExternal />
                       </span>
-                    </a>
+                    </a> */}
                     <a
                       rel="noreferrer"
                       className="flex items-center space-x-4"
