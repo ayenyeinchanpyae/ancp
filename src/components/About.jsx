@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from 'framer-motion';
 import ancp from "../assets/ancp.png";
-import { Animate } from "react-simple-animate";
 import SectionWrapper from "./common/SectionWrapper";
 import SectionTitle from "./common/SectionTitle";
 const About = () => {

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import VerticalTabs from './VerticalTab';
 import ContentSection from './ContentSection';
-import SectionWrapper from './common/SectionWrapper';
-import SectionTitle from './common/SectionTitle';
+import SectionWrapper from '../common/SectionWrapper';
+import SectionTitle from '../common/SectionTitle';
 
 const tabs = [
   { id: '0', title: 'Full Stack Developer' },

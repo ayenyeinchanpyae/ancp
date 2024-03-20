@@ -2,12 +2,13 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
-import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
-import Experience from "./components/Experience";
+import Experience from "./components/Experience/Experience.jsx";
 import Skills from "./components/Skills.jsx";
 import { Helmet } from "react-helmet";
 import Footer from "./components/Footer.jsx";
+import Projects from "./components/Projects/Projects.jsx"
+
 function App() {
   return (
     <div>
@@ -19,10 +20,11 @@ function App() {
       <Home />
       <About />
       {/* <Portfolio /> */}
-      <Experience /> 
+      <Experience />
       <Skills />
+      {/* <Projects /> */}
       <Contact />
-      <Footer/>
+      <Footer />
       <SocialLinks />
     </div>
   );
