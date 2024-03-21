@@ -38,10 +38,10 @@ const SocialLinks = () => {
       id: 4,
       child: (
         <>
-          resume <BsFillPersonLinesFill size={30} />
+          CV <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "/AyeNyeinChanPyae_BackendDeveloper_resume.pdf",
+      href: "/AyeNyeinChanPyae_FullStackDeveloper_CV.pdf",
       style: "rounded-br-md",
       download: true,
     },

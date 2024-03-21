@@ -1,10 +1,7 @@
 import javascript from '../assets//skills/javascript.png';
-import node from '../assets/skills/node.png';
-import typescript from '../assets/skills/typescript.png';
-import express from '../assets/skills/express.jpeg';
 
 const projectData = [
-  {
+  { 
     id: 0,
     src: javascript,
     tiprojectTitletle: 'CRM Website',

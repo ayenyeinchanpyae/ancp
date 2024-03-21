@@ -7,7 +7,6 @@ import Experience from "./components/Experience/Experience.jsx";
 import Skills from "./components/Skills.jsx";
 import { Helmet } from "react-helmet";
 import Footer from "./components/Footer.jsx";
-import Projects from "./components/Projects/Projects.jsx"
 
 function App() {
   return (
@@ -19,10 +18,8 @@ function App() {
       <NavBar />
       <Home />
       <About />
-      {/* <Portfolio /> */}
       <Experience />
       <Skills />
-      {/* <Projects /> */}
       <Contact />
       <Footer />
       <SocialLinks />
