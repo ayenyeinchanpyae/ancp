@@ -80,15 +80,15 @@ const Experience = () => {
   const activeContent = content[activeTab];
 
   return (
-    <SectionWrapper sectionName="experience">
+    <SectionWrapper sectionName="experience" fullHeight={true}>
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col gap-4 justify-between w-full h-full">
         <SectionTitle title="Experience" />
 
-        <div className="flex p-4">
-          <div className="w-1/4">
+        <div className="flex lg:flex-row flex-col p-4">
+          <div className="lg:w-1/4">
             <VerticalTabs tabs={tabs} onTabChange={handleTabChange} />
           </div>
-          <div className="w-3/4">
+          <div className="lg:w-3/4">
             {activeContent && <ContentSection key={activeContent.id} content={activeContent} />}
           </div>
         </div>

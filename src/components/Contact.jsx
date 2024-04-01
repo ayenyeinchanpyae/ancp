@@ -40,15 +40,13 @@ const Contact = () => {
     setIsSuccess(false);
   }, 10000);
   return (
-    <SectionWrapper sectionName="contact">
+    <SectionWrapper sectionName="contact" fullHeight={true}>
       {isSuccess && (
         <div className="toast toast-top toast-end mt-[100px]">
           <div className="alert alert-success">
             <div>
               <BsCheckCircle className="text-white" />
-              <span className="text-white">
-                Your message was sent successfully
-              </span>
+              <span className="text-white">Your message was sent successfully</span>
             </div>
           </div>
         </div>
@@ -58,19 +56,17 @@ const Contact = () => {
           <div className="alert alert-error">
             <div>
               <BsCheckCircle className="text-white" />
-              <span className="text-white">
-                Something went wrong. Please try again.
-              </span>
+              <span className="text-white">Something went wrong. Please try again.</span>
             </div>
           </div>
         </div>
       )}
-      <div className="flex flex-col  justify-center max-w-screen-lg mx-auto h-full">
-        <div className="pb-8">
-          <SectionTitle title="Get In Touch"/>
+      <div className="flex flex-col  justify-center max-w-screen-lg mx-auto h-full pb-8">
+        <div className="pb-8 mx-4">
+          <SectionTitle title="Get In Touch" />
           <p className="py-6">
-            Feel free to drop me a message if you have some interesting offer or
-            you want to hang out.
+            Feel free to drop me a message if you have some interesting offer or you want to hang
+            out.
           </p>
         </div>
 

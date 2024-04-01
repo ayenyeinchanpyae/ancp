@@ -9,7 +9,7 @@ const VerticalTab = ({ tabs, onTabChange }) => {
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="flex lg:flex-col md:flex-row">
       {tabs.map((tab) => (
         <button
           key={tab.id}
