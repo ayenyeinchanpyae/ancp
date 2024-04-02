@@ -14,26 +14,19 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_ujpkv8b",
-        "contact_form",
-        form.current,
-        "fZMYk2AWHbgQQEHSe"
-      )
-      .then(
-        (result) => {
-          //document.getElementById("contact-form").reset();
-          setIsSuccess(true);
-          //  clear all input values in the form
-          userName.current.value = "";
-          userEmail.current.value = "";
-          userMessage.current.value = "";
-        },
-        (error) => {
-          setIsError(true);
-        }
-      );
+    emailjs.sendForm('service_r30kh3n', 'contact_form', form.current, 'fZMYk2AWHbgQQEHSe').then(
+      (result) => {
+        //document.getElementById("contact-form").reset();
+        setIsSuccess(true);
+        //  clear all input values in the form
+        userName.current.value = '';
+        userEmail.current.value = '';
+        userMessage.current.value = '';
+      },
+      (error) => {
+        setIsError(true);
+      },
+    );
   };
   setTimeout(() => {
     setIsError(false);
